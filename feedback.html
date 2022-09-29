@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <title>Customer Feedback</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="feedback.style.css">
+    </head>
+    <body>
+        <h1>Feedback</h1>
+        <p>How do you like our food, services, website? Tell us your likes and
+            dislikes using the form below.</p>
+        <div class="container">
+            <form action="" name="feedbackForm" method="post">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="userName">Name*</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="userName" name="userName"
+                            required
+                            placeholder="John Doe"  pattern="([a-z]|[A-Z]){20}"/>
+                    </div>
+                </div>
+
+                <br> <div class="row">
+                    <div class="col-25">
+                        <label for="contactNum">Phone Number*</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="tel" id="contactNum" name="contactNum" required
+                                placeholder="012-3456789" pattern="01[0-9]{1}-[0-9]{7}" />
+                    </div>
+
+               <br> <div class="row">
+                    <div class="col-25">
+                        <label for="userEmail">Email*</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="userEmail" name="userEmail" required
+                            placeholder="john_doe@example.com" />
+                    </div>
+               <br> </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="feedBackType">Choose a category of feedback:</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="feedBackTpe" name="feedBackType">
+                            <option value="food">Food</option>
+                            <option value="services">Customer service</option>
+                            <option value="website">Website</option>
+                        </select>
+                    </div>
+                </div>
+                <br><fieldset>
+                    <legend>Services Feedbacks</legend>
+                    <div>
+                          <br> <img src="dh.bad.emoji.png" alt="VeryBad" width="30px"ma>
+                           <img src="dh.normal.emoji.png" alt="Bad" width="30px">
+                           <img src="dh.notbad.emoji.png" alt="NotBad" width="30px">
+                           <img src="dh.good.emoji.png" alt="Good" width="30px">
+                           <img src="dh.best.emoji.png" alt="Best" width="30px">
+                           <label for="feedbacklevel"></label>
+                           <br> <input type="range" id="feedbacklevel" value="28" alt="feedback"
+                            max="30" min="5" step="5">
+                    </div>
+                </fieldset><br>
+                <div>
+                        <fieldset>
+                            <legend>Food Feedback</legend>
+                        <textarea name="feedbackfood" id="feedbackfood" cols="40" rows="5"></textarea>
+                    </fieldset></div>
+                <div>
+                    <input type="submit" value="Send Feedback" focus>
+                    <input type="reset" value="Clear Form"  focus>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <h1>MENU</h1>
+            <a href="#">Traditional Dishes</a> <a href="#">Desserts</a> <a href="#">Noodles</a> <a href="#">Soup</a> <a href="#">Fried Dishes</a> <a href="#">Drinks</a> 
+            <h1>ORDER</h1>
+            <a href="#">Orders</a> <a href="#">Cart</a> <a href="#">Events</a>
+            <h1>CUSTOMER SERVICE</h1>
+             <a href="#">Contact Us</a> <a href="#">FAQs</a>
+            <h1>MY ACCOUNT</h1>
+            <a href="#">Login Account</a> <a href="#">Sign In</a>
+            <h1>NUTRITION</h1>
+            <a href="#">Nutrition Information</a> <a href="#">Food Allergen</a> <a href="#">Gluten Free Pizza</a>
+            <h1>POLICIES</h1>
+            <a href="#">Privacy Policy</a> <a href="#">Terms of Use</a>
+           <br><br> <address>
+            DUN HUANG CHINESE CUISINE <br />
+            888 Chinese Steet, <br />
+            NB 56000 <br />
+            (04) 6666 8889
+            </address>
+         </footer>
+    </body>
+</html>

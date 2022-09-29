@@ -1,0 +1,39 @@
+Description
+Your Website must include the following elements:
+• All media elements (text, graphic, audio, video and animation)
+• Hypertext and hypermedia
+• List (ordered/unordered/definition list)
+• Formatting (Alignment, Paragraph, Font, etc)
+• Hotspot / image map
+• Table
+• Form
+• Must use CSS for all of the GUI design (use External Style Sheet for 
+common formatting)
+• JavaScript
+Number of 
+Webpage
+The maximum number of web pages is not fixed. It should depend on the 
+number of functions (modules) available in the Website.
+Note: Each student is required to develop at least THREE web pages. A 
+group of 4 members creates at least 12 pages.
+Example : 
+• Member A – 2 modules : 
+- Home page module (1 web page) 
+- Contact us module (1 web page) 
+Member A helps member B create 1 product web page
+• Member B -2 modules :
+- Product module ( Member B creates 2 product web pages )
+- Payment module (1 web page)
+Tools You are free to use any software tools (VS code, expression web, 
+dreamwaver, notepad ++ ) to create your Website. However, you are 
+strongly advised to use Visual Studio Code. Please be reminded that the 
+dirty code produced by these software tools may decrease the 
+understandability and maintainability of your Web pages. Student are not 
+allow to use HTML Converter such as Microsoft Word and WordPress to 
+create web page.
+**Bootstrap ➔ not allow
+
+References:
+http://www.iluvvivid.com/mobile/newsdetail/181
+js redirection:
+https://www.w3schools.com/howto/howto_js_redirect_webpage.asp
