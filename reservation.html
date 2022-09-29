@@ -1,185 +1,180 @@
 <!DOCTYPE html>
 <html lan="en">
-    <head>
-        <title>Reservation</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="form_style.css">
-    </head>
-    <body>
-        <header>
-            <a href="/index.html"><img src="dh.logo1.png" width="50px"
-                    height="50px" alt="DUN HUANG
+
+<head>
+    <title>Reservation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="form_style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="dh.logo1.png" width="50px" height="50px" alt="DUN HUANG
                     CHINESE CUISINE" /></a>
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/menu.html">Menu</a></li>
-                    <li><a href="/events.html">EVENTS</a></li>
-                    <li><a href="/about-us.html">ABOUT US</a></li>
-                    <li><a href="/faq.html">FAQ</a></li>
-                    <li><a href="/registration.html">REGISTRATION</a></li>
-                    <li><a href="/log-in.html">LOGIN</a></li>
-                    <li><a href="/contact-us.html">CONTACT</a></li>
-                    <li><a href="/feedback.html">FEEDBACK</a></li>
-                    <li><a href="/reservation.html">RESERVATION</a></li>
-                    <li><a href="#">CART</a></li>
-                </ul>
-            </nav>
-        </header>
-        <h1>Reservation</h1>
-        <p>Fill in the form to reserve our primium rooms. We have private dining
-            rooms to small gathering room with a Karaoke system.</p>
-        <p>Reserve your spot now before the slots are filled.</p>
-        <div class="container">
-            <form action="" method="post" name="reservationForm">
-                <div class="row">
-                    <div class="col-25">
-                        <label for="userName">Name*</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="userName" name="userName"
-                            placeholder="John Doe" required
-                            onchange="check_input()" />
-                    </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="about-us.html">ABOUT US</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="registration.html">REGISTRATION</a></li>
+                <li><a href="log-in.html">LOGIN</a></li>
+                <li><a href="contact-us.html">CONTACT</a></li>
+                <li><a href="feedback.html">FEEDBACK</a></li>
+                <li><a href="reservation.html">RESERVATION</a></li>
+                <li><a href="#">CART</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 style="font-size: larger;">Reservation</h1>
+    <p style="font-size: large;">Fill in the form to reserve our primium rooms. We have private dining
+        rooms to small gathering room with a Karaoke system.</p>
+    <p style="font-size: large;">Reserve your spot now before the slots are filled.</p>
+    <div class=" container">
+        <form action="" method="post" name="reservationForm">
+            <div class="row">
+                <div class="col-25">
+                    <label for="userName">Name*</label>
                 </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="userEmail">Email*</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="email" required id="userEmail"
-                            name="userEmail" placeholder="example@email.com"
-                            onchange="check_input()" />
-                    </div>
+                <div class="col-75">
+                    <input type="text" id="userName" name="userName" placeholder="John Doe" required
+                        onchange="check_input()" />
                 </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="userPhone">Contact Number*</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" required id="userPhone"
-                            name="userPhone" pattern="^\d{9, 10}$"
-                            placeholder="0123456789" onchange="check_input()"/>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="userEmail">Email*</label>
                 </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="date">Date*</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="date" id="date" name="date" />
-                    </div>
+                <div class="col-75">
+                    <input type="email" required id="userEmail" name="userEmail" placeholder="example@email.com"
+                        onchange="check_input()" />
                 </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="numPeople">How many people*</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="number" id="numPeople" name="numPeople"
-                            min="4" max="12" step="2" value="6" required />
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="userPhone">Contact Number*</label>
                 </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="typeOfReservation">Type of Reservation</label>
-                    </div>
-                    <div class="col-75">
-                        <select id="typeOfReservation" name="TypeOfReservation">
-                            <option value="dinner">Dinner table</option>
-                            <option value="private">Private room (sit up to 12)</option>
-                            <option value="karaoke">Karaoke room (karaoke system
-                                provided)</option>
-                        </select>
-                    </div>
+                <div class="col-75">
+                    <input type="text" required id="userPhone" name="userPhone" pattern="^\d{9, 10}$"
+                        placeholder="0123456789" onchange="check_input()" />
                 </div>
-                <div class="row">
-                    <div class="col-25">
-                        <img src="table.jpg" alt=""
-                            style="width:100%;height:100%;"/>"
-                    </div>
-                    <div class="col-75">
-                        <fieldset>
-                            <legend>Special requests</legend>
-                            <input type="checkbox" name="babySit" id="babySit"
-                                />
-                            <label for="babySit">I need a seat for a baby.</label>
-                            <input type="checkbox" name="boosterSit"
-                                id="boosterSit" />
-                            <label for="boosterSit">I need a booster seat.</label>
-                            <input type="checkbox" name="vegan" id="vegan" />
-                            <label for="vegan">I require vegan menu.</label>
-                            <label for="extraDetail">Extra instructions:</label>
-                            <textarea id="extraDetail" name="extraDetail"
-                                cols="30" rows="3"></textarea>
-                        </fieldset>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="date">Date*</label>
                 </div>
-                <input type="submit" id="submit" value="Submit" />
-                <input type="reset" value="Clear">
-            </form>
-        </div>
+                <div class="col-75">
+                    <input type="date" id="date" name="date" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="numPeople">How many people*</label>
+                </div>
+                <div class="col-75">
+                    <input type="number" id="numPeople" name="numPeople" min="4" max="12" step="2" value="6" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="typeOfReservation">Type of Reservation</label>
+                </div>
+                <div class="col-75">
+                    <select id="typeOfReservation" name="TypeOfReservation">
+                        <option value="dinner">Dinner table</option>
+                        <option value="private">Private room (sit up to 12)</option>
+                        <option value="karaoke">Karaoke room (karaoke system
+                            provided)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <img src="table.jpg" alt="" style="width:100%;height:100%;" />"
+                </div>
+                <div class="col-75">
+                    <fieldset>
+                        <legend>Special requests</legend>
+                        <input type="checkbox" name="babySit" id="babySit" />
+                        <label for="babySit">I need a seat for a baby.</label>
+                        <input type="checkbox" name="boosterSit" id="boosterSit" />
+                        <label for="boosterSit">I need a booster seat.</label>
+                        <input type="checkbox" name="vegan" id="vegan" />
+                        <label for="vegan">I require vegan menu.</label>
+                        <label for="extraDetail">Extra instructions:</label>
+                        <textarea id="extraDetail" name="extraDetail" cols="30" rows="3"></textarea>
+                    </fieldset>
+                </div>
+            </div>
+            <input type="submit" id="submit" value="Submit" />
+            <input type="reset" value="Clear">
+        </form>
+    </div>
+    <br>
+    <footer>
+        <h1>MENU</h1>
+        <a href="#">Traditional Dishes</a> <a href="#">Desserts</a> <a href="#">Noodles</a> <a href="#">Soup</a> <a
+            href="#">Fried
+            Dishes</a> <a href="#">Drinks</a>
+        <h1>ORDER</h1>
+        <a href="#">Orders</a> <a href="#">Cart</a> <a href="#">Events</a>
+        <h1>CUSTOMER SERVICE</h1>
+        <a href="#">Contact Us</a> <a href="#">FAQs</a>
+        <h1>MY ACCOUNT</h1>
+        <a href="#">Login Account</a> <a href="#">Sign In</a>
+        <h1>NUTRITION</h1>
+        <a href="#">Nutrition Information</a> <a href="#">Food Allergen</a>
+        <a href="#">Gluten Free Pizza</a>
+        <h1>POLICIES</h1>
+        <a href="#">Privacy Policy</a> <a href="#">Terms of Use</a>
         <br>
-        <footer>
-            <h1>MENU</h1>
-            <a href="#">Traditional Dishes</a> <a href="#">Desserts</a> <a
-                href="#">Noodles</a> <a href="#">Soup</a> <a href="#">Fried
-                Dishes</a> <a href="#">Drinks</a>
-            <h1>ORDER</h1>
-            <a href="#">Orders</a> <a href="#">Cart</a> <a href="#">Events</a>
-            <h1>CUSTOMER SERVICE</h1>
-            <a href="#">Contact Us</a> <a href="#">FAQs</a>
-            <h1>MY ACCOUNT</h1>
-            <a href="#">Login Account</a> <a href="#">Sign In</a>
-            <h1>NUTRITION</h1>
-            <a href="#">Nutrition Information</a> <a href="#">Food Allergen</a>
-            <a href="#">Gluten Free Pizza</a>
-            <h1>POLICIES</h1>
-            <a href="#">Privacy Policy</a> <a href="#">Terms of Use</a>
-            <br> <address>
-                <h1>ADDRESS</h1>
-                DUN HUANG CHINESE CUISINE <br />
-                888 Chinese Steet, <br />
-                NB 56000 Pulau Penang<br />
-                (04) 6666 8889
-            </address>
-        </footer>
-        <script>
-                            var today = new Date();
-            var year = today.getFullYear();
-            if (today.getMonth < 9) {
-                var month = "0" + (today.getMonth() + 1);
+        <address>
+            <h1>ADDRESS</h1>
+            DUN HUANG CHINESE CUISINE <br />
+            888 Chinese Steet, <br />
+            NB 56000 Pulau Penang<br />
+            (04) 6666 8889
+        </address>
+    </footer>
+    <script>
+        var today = new Date();
+        var year = today.getFullYear();
+        if (today.getMonth < 9) {
+            var month = "0" + (today.getMonth() + 1);
+        } else {
+            var month = today.getMonth() + 1;
+        }
+        if (today.getDate() < 10) {
+            var day = "0" + today.getDate();
+        } else {
+            var day = today.getDate();
+        }
+        input_date();
+        function input_date() {
+            var date_ele = document.getElementById("date");
+            date_ele.value = getDate();
+        }
+        function getDate() {
+            var full_date = year + "-" + month + "-" + day;
+            return full_date;
+        }
+
+        function check_input() {
+            email = document.getElementById("userEmail");
+            username = document.getElementById("userName");
+            contactNo = document.getElementById("userPhone");
+            // check if elements are empty, if they are dont enable button
+            if (email.value != "" && username.value != "" && contactNo.value != "") {
+                document.getElementById("submit").disabled = false;
             } else {
-                var month = today.getMonth() + 1;
-            }
-            if (today.getDate() < 10) {
-                var day = "0"+today.getDate();
-            } else {
-                            var day = today.getDate();
-            }
-            input_date();
-            function input_date() {
-                var date_ele = document.getElementById("date");
-                date_ele.value = getDate();
-            }
-            function getDate() {
-                var full_date = year + "-" + month + "-" + day;
-                return full_date;
-            }
-            
-            function check_input() {
-                email=document.getElementById("userEmail");
-                username=document.getElementById("userName");
-                contactNo=document.getElementById("userPhone");
-                // check if elements are empty, if they are dont enable button
-                if (email.value != "" && username.value != "" && contactNo.value != "") {
-                    document.getElementById("submit").disabled = false;
-                } else {
-                    document.getElementById("submit").disabled = true;
-                } // end of check
-            } // end of function
-        </script>
-    </body>
+                document.getElementById("submit").disabled = true;
+            } // end of check
+        } // end of function
+    </script>
+</body>
+
 </html>

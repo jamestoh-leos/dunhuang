@@ -5,7 +5,7 @@
 input:focus,
 textarea:focus,
 select:focus {
-    background-color: rgb(255, 255, 180);
+    background-color: lightskyblue;
 }
 
 input:valid:focus {
@@ -16,7 +16,9 @@ input:focus:invalid {
     background: rgb(255, 230, 230) url("warn.png") no-repeat right;
 }
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid rgb(70, 68, 68);
@@ -24,7 +26,9 @@ input[type=text], select, textarea {
     resize: vertical;
 }
 
-input[type=email], select, textarea {
+input[type=email],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid rgb(70, 68, 68);
@@ -35,9 +39,11 @@ input[type=email], select, textarea {
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
+    font-size: large;
 }
 
-input[type=submit], input[type=reset] {
+input[type=submit],
+input[type=reset] {
     background-color: rgb(37, 116, 161);
     color: white;
     padding: 12px 20px;
