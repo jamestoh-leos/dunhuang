@@ -1,0 +1,389 @@
+img.logo{
+  margin-right: 20px;
+  width: 130px;
+  height: 130px;
+  margin-bottom: 0%;
+ 
+}
+header{
+  margin-top: 0px;
+  margin: none;
+  margin-left: 0px;
+}
+header h1{
+  color:rgb(255, 255, 163);
+  text-shadow: 2px 4px 2px  rgb(248, 244, 244);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size:3em;
+   margin-left: 80px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+body{
+  margin: 0% 0% 0% 0%;
+}
+
+
+nav ul li a {
+  display: block;
+  padding: 10px 10px;
+  background-color: rgb(52, 3, 3);
+  color: white;
+  text-align: auto;
+  text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: rgb(5, 10, 34);
+  width: auto;
+}
+
+header nav ul li a:hover {
+  color: rgb(250, 238, 159);
+}
+
+header nav ul li {
+  font-size: 1.3em; 
+  line-height: 2em; 
+  width:100%;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia;
+}
+
+header nav ul li a {
+  color: white;
+  display: block;
+  width: 100%;
+}
+a#navicon {
+  display: none;
+}
+
+
+html {
+  background-image: url(background.jpeg);
+  height: auto;
+  background-position: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section {
+  margin: 30px 5%;
+}
+section h1 {
+  font-size: 1.5em;
+}
+
+section p {
+  font-size: 0.9em;
+}
+
+
+
+
+
+footer {
+  color: white;    
+  background-color: rgb(52, 3, 3);   
+}
+footer table#footer{
+  width: 100%;
+ text-align: center;
+  padding-top: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 30px;
+  margin-bottom:none;
+}
+footer h1 {
+  color: rgb(255, 241, 147);   
+  font-size: 1.6em;
+}
+
+footer table#footer tr{
+  padding: none;
+}
+
+
+footer a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+ 
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+table#footer address p{
+  font-style: normal;
+ margin-top: 0%;
+}
+
+@media only screen and (min-width: 641px) {
+
+  body header nav ul {
+     display: -webkit-flex;
+     display: flex;
+     -webkit-flex-flow: row nowrap;
+     flex-flow: row nowrap;
+     -webkit-justify-content: center;
+     justify-content: center;
+  }
+  
+  body header nav ul li {
+     -webkit-flex: 0 1 auto;
+     flex: 0 1 auto;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+
+ 
+  a#navicon {
+     display: block;
+  }
+  
+  header nav ul {
+     display: none;
+  }
+  
+  header nav ul li {
+     font-size: 1em;
+     line-height: 1.3em;
+     height: 1.3em;
+  }
+  
+  a#navicon:hover+ul, header nav ul:hover {
+     display: block;
+  }
+
+  section h1 {
+     font-size: 1.5em;
+  }
+  
+  section p {
+     font-size: 0.9em;
+  }
+}
+   
+/* event */
+img.open{
+   padding: 0px 0px 0px 0px;
+   margin: 0px;
+}
+article{
+   float: right;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both ;
+}
+table.openclose{
+   margin-top: 20px;
+   margin-left: 20%;
+   margin-right:20%;
+   border-style: double;
+   width: 60%;
+   height: auto;
+   border-color: rgb(235, 225, 169);
+   
+}
+table tr th h1#open{
+  text-align: center;
+  color: rgb(146, 189, 250);
+}
+table tr th h1#close{
+  text-align: center;
+  color: rgb(231, 50, 50);
+}
+table tr td p{
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+table.openclose td{
+  border: 2px solid pink;
+}
+table.openclose th{
+  border: 2px solid rgb(235, 225, 169);
+}
+section.other{
+   position: relative;
+}
+
+table{
+  width: 100%;
+  text-align: center;
+}
+
+/* First Event */
+#hide1 {
+  display: none;
+}
+div#hide1{
+  border-style: dotted;
+} 
+#img11:hover + #hide1 {
+  display: block;
+  color: white;
+}
+table tr td div#hide1 p{
+  font-size: 20px;
+}
+
+/* Second Event */
+#hide2 {
+  display: none;
+}
+div#hide2{
+  border-style: dotted;
+}   
+#img12:hover + #hide2 {
+  display: block;
+  color: white;
+}
+table tr td div#hide2 p{
+  font-size: 20px;
+}
+
+/* Third Event */
+#hide3 {
+  display: none;
+}
+div#hide3{
+  border-style: dotted;
+}    
+#img13:hover + #hide3 {
+  display: block;
+  color: white;
+}
+
+/* Fourth Event */
+#hide4 {
+  display: none;
+}
+div#hide4{
+  border-style: dotted;
+}    
+#img14:hover + #hide4 {
+  display: block;
+  color: white;
+}
+
+/* Fifth Event */
+#hide5 {
+  display: none;
+}
+div#hide5{
+  border-style: dotted;
+}    
+#img21:hover + #hide5 {
+  display: block;
+  color: white;
+}
+table tr td div#hide5 p{
+  font-size: 20px;
+}
+
+/* Sixth Event */
+#hide6 {
+  display: none;
+}
+div#hide6{
+  border-style: dotted;
+}    
+#img22:hover + #hide6 {
+  display: block;
+  color: white;
+}
+
+/* Seven Event */
+#hide7 {
+  display: none;
+}
+div#hide7{
+  border-style: dotted;
+}    
+#img23:hover + #hide7 {
+  display: block;
+  color: white;
+}
+
+/* Eight Event */
+#hide8 {
+  display: none;
+}
+div#hide8{
+  border-style: dotted;
+}    
+#img24:hover + #hide8 {
+  display: block;
+  color: white;
+}
+
+/* Nine Event */
+#hide9 {
+  display: none;
+}
+div#hide9{
+  border-style: dotted;
+}    
+#img25:hover + #hide9 {
+  display: block;
+  color: white;
+}
+
+/* Ten Event */
+#hide10 {
+  display: none;
+}
+div#hide10{
+  border-style: dotted;
+}    
+#img15:hover + #hide10 {
+  display: block;
+  color: white;
+}
+h2{
+  text-align: center;
+  color: rgb(244, 240, 164);
+}
+div#title{
+  border-style: ridge;
+  border-radius: 20px;
+  padding: 20px;
+  width: 80%;
+  margin-top: 60px;
+  margin-left:10%;
+  margin-right: 10%;
+}
+h3#end{
+  color: rgb(232, 161, 161);
+  text-align: center;
+  border: 2px white solid;
+  width: 450px;
+  padding: 20px;
+  border-style: dashed;
+  border-radius: 20px;
+}
+audio{
+  float: right;
+  margin-top: 30px;
+ 
+}

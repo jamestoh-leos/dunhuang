@@ -1,103 +1,142 @@
 <!DOCTYPE html>
 <html lan="en">
-    <head>
+   
+<head>
         <title>Customer Feedback</title>
+        <script src="feedback.javascript.js"></script>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="/css/reset.css">
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="feedback.style.css">
+      
+        <link rel="stylesheet" href="feedback_style.css">
+        
     </head>
-    <body>
+   
+    <body>  <header><h1 class="restaurantname"><img class="logo" src="dh.logo1.png" alt="DUN HUANG CHINESE CUISINE" width="80px" height="80px">DUN HUANG CHINESE CUISINE</h1>
+       
+        <a href="/index.html"></a>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/menudh.html">MENU</a></li>
+                    <li><a href="/event.html">EVENTS</a></li>
+                    <li><a href="/About_us.html">ABOUT US</a></li>
+                    <li><a href="/faq.html">FAQ</a></li>
+                    <li><a href="/registration.html">REGISTRATION</a></li>
+                    <li><a href="/login.html">LOGIN</a></li>
+                    <li><a href="/contactus.html">CONTACT</a></li>
+                    <li><a href="/feedback.html">FEEDBACK</a></li>
+                    <li><a href="/reservation.html">RESERVATION</a></li>
+                    <li><a href="/shoppingcart.html">CART</a></li>
+                </ul>
+            </nav>
+        </header>
+    <section> <article>
         <h1>Feedback</h1>
         <p>How do you like our food, services, website? Tell us your likes and
             dislikes using the form below.</p>
-        <div class="container">
-            <form action="" name="feedbackForm" method="post">
-                <div class="row">
-                    <div class="col-25">
-                        <label for="userName">Name*</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="userName" name="userName"
-                            required
-                            placeholder="John Doe"  pattern="([a-z]|[A-Z]){20}"/>
-                    </div>
-                </div>
+       <form action="/endingpage.html" name="feedbackForm" method="get"><table><table>
+           
+                        <tr> <th><label for="userName">Name* :</label></th></tr>
+                   <tr> <td> <input type="text" id="userName" name="userName"
+                            required placeholder="John Doe"   /></td></tr>
 
-                <br> <div class="row">
-                    <div class="col-25">
-                        <label for="contactNum">Phone Number*</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="tel" id="contactNum" name="contactNum" required
-                                placeholder="012-3456789" pattern="01[0-9]{1}-[0-9]{7}" />
-                    </div>
+               <tr><th> <label for="contactNum">Phone Number* :</label></th></tr>
+                       
+                   <tr><td><input type="tel" id="contactNum" name="contactNum" required
+                                placeholder="012-3456789" pattern="01[0-9]{1}-[0-9]{7}" /></td></tr>
+                        
+                    <tr><th><label for="userEmail">Email* :</label></th></tr>
+                        
+                   <tr><td><input type="email" id="userEmail" name="userEmail" required
+                            placeholder="john_doe@example.com" /></td></tr>
 
-               <br> <div class="row">
-                    <div class="col-25">
-                        <label for="userEmail">Email*</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="email" id="userEmail" name="userEmail" required
-                            placeholder="john_doe@example.com" />
-                    </div>
-               <br> </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="feedBackType">Choose a category of feedback:</label>
-                    </div>
-                    <div class="col-75">
-                        <select id="feedBackTpe" name="feedBackType">
-                            <option value="food">Food</option>
-                            <option value="services">Customer service</option>
-                            <option value="website">Website</option>
-                        </select>
-                    </div>
-                </div>
-                <br><fieldset>
-                    <legend>Services Feedbacks</legend>
-                    <div>
-                          <br> <img src="dh.bad.emoji.png" alt="VeryBad" width="30px"ma>
-                           <img src="dh.normal.emoji.png" alt="Bad" width="30px">
-                           <img src="dh.notbad.emoji.png" alt="NotBad" width="30px">
-                           <img src="dh.good.emoji.png" alt="Good" width="30px">
-                           <img src="dh.best.emoji.png" alt="Best" width="30px">
-                           <label for="feedbacklevel"></label>
-                           <br> <input type="range" id="feedbacklevel" value="28" alt="feedback"
-                            max="30" min="5" step="5">
-                    </div>
-                </fieldset><br>
+                  
+            </table>
+                <br><div><fieldset id="services">
+                    <legend id="servives">Services Feedbacks</legend>
+                    <table>
+                         <tr> <th> <img src="dh.bad.emoji.png" alt="VeryBad" width="100px">
+                           <img src="dh.normal.emoji.png" alt="Bad" width="100px">
+                           <img src="dh.notbad.emoji.png" alt="NotBad" width="100px">
+                           <img src="dh.good.emoji.png" alt="Good" width="100px">
+                           <img src="dh.best.emoji.png" alt="Best" width="100px"></th></tr>
+                           <tr><th>
+                            <input type="range" id="feedbacklevel" value="" alt="feedback"
+                            max="35" min="7" step="7"></th></tr>
+                            <tr><th><label for="">Suggestion :</label></th></tr>
+                            <tr><th>
+                            <textarea name="suggestion" id="suggestion" cols="30" rows="10" placeholder="Any Suggestion ~"></textarea></th></tr>
+                    </table>
+                </fieldset></div><br>
                 <div>
                         <fieldset>
-                            <legend>Food Feedback</legend>
-                        <textarea name="feedbackfood" id="feedbackfood" cols="40" rows="5"></textarea>
-                    </fieldset></div>
-                <div>
-                    <input type="submit" value="Send Feedback" focus>
-                    <input type="reset" value="Clear Form"  focus>
+                            <legend id="food">Food Feedback</legend>
+                      <table><tr><th> <label for="Food" >Food :</label></th>
+                       <th><label for="">Drinks :</label></th></tr>
+                       <tr>
+                       <br><td><textarea name="feedbackfood" id="feedbackfood" cols="40" rows="5"></textarea></td>
+                       <td><textarea name="feedbackfood" id="feedbackfood" cols="40" rows="5"></textarea></td></tr>
+                    </table></fieldset></div>
+                
+            <div>
+                    <input type="submit" value="Send Feedback" focus onclick="checkform();">
+                    <input type="reset" value="Clear Form" onclick="window.location.reload();" focus>
                 </div>
-            </form>
-        </div>
-        <footer>
-            <h1>MENU</h1>
-            <a href="#">Traditional Dishes</a> <a href="#">Desserts</a> <a href="#">Noodles</a> <a href="#">Soup</a> <a href="#">Fried Dishes</a> <a href="#">Drinks</a> 
-            <h1>ORDER</h1>
-            <a href="#">Orders</a> <a href="#">Cart</a> <a href="#">Events</a>
-            <h1>CUSTOMER SERVICE</h1>
-             <a href="#">Contact Us</a> <a href="#">FAQs</a>
-            <h1>MY ACCOUNT</h1>
-            <a href="#">Login Account</a> <a href="#">Sign In</a>
-            <h1>NUTRITION</h1>
-            <a href="#">Nutrition Information</a> <a href="#">Food Allergen</a> <a href="#">Gluten Free Pizza</a>
-            <h1>POLICIES</h1>
-            <a href="#">Privacy Policy</a> <a href="#">Terms of Use</a>
-           <br><br> <address>
-            DUN HUANG CHINESE CUISINE <br />
-            888 Chinese Steet, <br />
-            NB 56000 <br />
-            (04) 6666 8889
-            </address>
-         </footer>
+           </table> </form>
+       
+    </article></section>
+
+    <br><br>
+    <footer>
+        <table id="footer">
+        
+            <th><h1>MENU</h1><br>
+                <a href="/menudh.html">Traditional Dishes</a><br>
+                <a href="/menudh.html">Soup</a><br>
+                <a href="/menudh.html">Desserts</a></th>
+            <th><h1>ORDER</h1> <a href="/reservation.html">Reservation</a><br>
+            <a href="/shoppingcart.html">Cart</a></th>
+            <th><h1>CONTACT US</h1><br>
+                <a href="/contactus.html">Contact Us</a><br>
+                <a href="/faq.html">FAQs</a></th>
+            <th><h1>MY ACCOUNT</h1><br>
+                <a href="/login.html">Login Account</a><br>
+             <a href="/registration.html">Sign In</a></th>
+            <th><h1>ADDRESS</h1><br><address>
+                  <p> DUN HUANG CHINESE CUISINE <br />
+                    888 Chinese Steet, <br />
+                    NB 56000 Pulau Pinang<br />
+                    (04) 6666 8889</p> 
+                    </address>
+            </th>
+       </table> 
+     </footer>
     </body>
 </html>
+<script language="JavaScript" type="text/JavaScript">
+    function checkform(){
+       var userName = document.getElementById("userName").value;
+       var contactNum = document.getElementById("contactNum").value;
+       var userEmail = document.getElementById("userEmail").value;
+      
+        if(userName == " "){
+            alert("Please enter your name .");
+            document.loginF.getElementById("userName").focus();
+            return false;
+        }
+        else if(contactNum == " "){
+            alert("Please enter your phone number.");
+            document.getElementById("contactNum").focus();
+            return false;
+        }
+        else if(userEmail == " "){
+            alert("Please enter your email.");
+            document.getElementById("userEmail").focus();
+            return false;
+        }
+        else{
+            alert("Thank You for feedback !")
+            return true;
+        }
+    }
+</script>

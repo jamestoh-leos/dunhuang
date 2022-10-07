@@ -1,0 +1,107 @@
+/*reservation*/
+* {
+    box-sizing: border-box;
+}
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: lightskyblue;
+}
+
+input:valid:focus {
+    background: rgb(220, 255, 220) url("ok.png") no-repeat right;
+}
+
+input:focus:invalid {
+    background: rgb(255, 230, 230) url("warn.png") no-repeat right;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(70, 68, 68);
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(70, 68, 68);
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 0px 12px 12px 0;
+    display: inline-block;
+    font-size: large;
+}
+
+input[type=submit],
+input[type=reset] {
+    background-color: rgb(37, 116, 161);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-left: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=reset]:hover {
+    background-color: #45a049;
+}
+
+div.container_reservation {
+    border-radius: 5px;
+    background-color: rgba(149, 36, 24, 0.555);
+    padding: 45px;
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: aliceblue;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-50 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.menuBox {
+    float: left;
+    margin-top: 6px;
+}
+
+.menuBox:hover {
+    transform: scale(1.5);
+}

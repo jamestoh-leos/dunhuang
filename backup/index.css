@@ -1,0 +1,229 @@
+img.logo{
+  margin-right: 20px;
+  width: 130px;
+  height: 130px;
+  margin-bottom: 0%;
+ 
+}
+header{
+  margin-top: 0px;
+  margin: none;
+  margin-left: 0px;
+}
+header h1{
+  color:rgb(255, 255, 163);
+  text-shadow: 2px 4px 2px  rgb(248, 244, 244);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size:3em;
+   margin-left: 80px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+body{
+  margin: 0% 0% 0% 0%;
+}
+
+
+nav ul li a {
+  display: block;
+  padding: 10px 10px;
+  background-color: rgb(52, 3, 3);
+  color: white;
+  text-align: auto;
+  text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: rgb(5, 10, 34);
+  width: auto;
+}
+
+header nav ul li a:hover {
+  color: rgb(250, 238, 159);
+}
+
+header nav ul li {
+  font-size: 1.3em; 
+  line-height: 2em; 
+  width:100%;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia;
+}
+
+header nav ul li a {
+  color: white;
+  display: block;
+  width: 100%;
+}
+a#navicon {
+  display: none;
+}
+
+
+html {
+  background-image: url(background.jpeg);
+  height: auto;
+  background-position: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section {
+  margin: 30px 5%;
+}
+section h1 {
+  font-size: 1.5em;
+}
+
+section p {
+  font-size: 0.9em;
+}
+
+
+ 
+ 
+ 
+ footer {
+  color: white;    
+  background-color: rgb(52, 3, 3);   
+}
+footer table#footer{
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+  margin: none;
+}
+footer h1 {
+  color: rgb(255, 241, 147);   
+  font-size: 1.4em;
+}
+footer table#footer tr td{
+  padding: 0px;
+}
+
+
+footer a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+ 
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer address {
+  font-style: normal;
+}
+ 
+ @media only screen and (min-width: 641px) {
+ 
+   body header nav ul {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+   }
+   
+   body header nav ul li {
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+   }
+ }
+ 
+ @media only screen and (max-width: 640px) {
+ 
+  
+   a#navicon {
+      display: block;
+   }
+   
+   header nav ul {
+      display: none;
+   }
+   
+   header nav ul li {
+      font-size: 1em;
+      line-height: 1.3em;
+      height: 1.3em;
+   }
+   
+   a#navicon:hover+ul, header nav ul:hover {
+      display: block;
+   }
+ 
+   section h1 {
+      font-size: 1.5em;
+   }
+   
+   section p {
+      font-size: 0.9em;
+   }
+ }
+
+/*homepage*/
+div.text{
+    color: black;
+    font-size: 30px;
+}
+h1#dh{
+    text-align: center;
+    width: 100%;
+    padding: 40px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 10s;
+}
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: rgb(223, 166, 10);}
+    to {background-color: rgb(174, 186, 1);}
+    to {background-color: rgb(250, 250, 88)}
+  }
+div.col-75 p#titles{
+    color: rgb(243, 243, 195);
+    font-size: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+    
+}
+div.col-75 p#dunhuanginfo{
+    color: bisque;
+    line-height: 1.6;
+    font-size: 25px;
+    border: 2px white solid;
+    border-style: dotted;
+    border-radius: 20px;
+    width: 60%;
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+img#dhpicture
+{
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    padding-right: 10px;
+}
+img#dhpicture:hover
+{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
+div.col-25 p{
+color:rgb(190, 251, 251);
+text-align: center;
+font-size: 20px;
+}

@@ -1,145 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <title>Registration</title>
-    <script src="registeration.js">
-    function reg()
-	{
-		localStorage.userN = getElementById("userN").value;
-		localStorage.pW = getElementById("pW").value;
-
-		
-	}
-    </script>
     <link rel="stylesheet" href="registration.css">
-   
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
 </head>
+
+<body>
 <header>
     <h1 class="restaurantname"><img class="logo" src="dh.logo1.png" alt="DUN HUANG CHINESE CUISINE" width="80px" height="80px">DUN HUANG CHINESE CUISINE</h1>
-    <img src="dh.upplogo2.jpg" alt="dunhunag" width="100%" height="240px">
+
     <nav>
         <ul>
             <li><a href="/index.html">HOME</a></li>
-            <li><a href="/menu.html">MENU</a></li>
-            <li><a href="/events.html">EVENTS</a></li>
-            <li><a href="/about-us.html">ABOUT US</a></li>
+            <li><a href="/menudh.html">MENU</a></li>
+            <li><a href="/event.html">EVENTS</a></li>
+            <li><a href="/About_us.html">ABOUT US</a></li>
             <li><a href="/faq.html">FAQ</a></li>
             <li><a href="/registration.html">REGISTRATION</a></li>
-            <li><a href="/log-in.html">LOGIN</a></li>
-            <li><a href="/contact-us.html">CONTACT</a></li>
+            <li><a href="/login.html">LOGIN</a></li>
+            <li><a href="/contactus.html">CONTACT</a></li>
             <li><a href="/feedback.html">FEEDBACK</a></li>
             <li><a href="/reservation.html">RESERVATION</a></li>
-            <li><a href="#">CART</a></li>
+            <li><a href="/shoppingcart.html">CART</a></li>
         </ul>
     </nav>
 </header>
-<section><table>
-<form action="login.new.html" onclick="reg();"></form>
-<tr>
-<td colspan=2>
-<h1><b>Registration Form</b></h1>
-</td>
-</tr>
 
-<tr>
-<td>Name :</td>
-<td><input type=text name=textnames id="textname" size="30" placeholder="Enter your name here"></td>
-</tr>
+<section>
+    <div class="container">
+      <div class="title" style="font-family: fantasy;">Member Registration</div><br>
+      <div class="content">
+        
+        <form action="login.html" name="regform" id="regform" onsubmit="return reg()" method="get">
 
-<tr>
-<td>Username :</td>
-<td><input type="text" name="username" id="username" placeholder="Enter your username"
-size="30"></td>
-</tr>
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Name</span>
+              <input type="text" placeholder="Enter your name" id="fname" name="name">
+            </div>
 
-<tr>
-	<td>Enter Password :</td>
-	<td><input type="password" placeholder="Enter Password here" id="t4" class="tb" /></td>
-</tr>
+            <div class="input-box">
+              <span class="details">Username</span>
+              <input type="text" placeholder="Enter your username" id="uname" name="uname">
+            </div>
 
-<tr>
-	<td>Enter Confirm Password :</td>
-	<td><input type="password" placeholder="Enter Password here" id="t5" class="tb" /></td>
-</tr>
+            <div class="input-box">
+              <br><span class="details">Email</span>
+              <input type="email" placeholder="Enter your email" id="email" name="email">
+            </div>
 
-<tr>
-  <td>Mobile Number :</td>
-  <td><input type="text" name="mobileno" id="mobileno" size="30"></td>
-  </tr>
+            <div class="input-box">
+              <br><span class="details">Contact Number</span>
+              <input type="tel" placeholder="Enter your number" id="pnum" name="pnum">
+            </div>
 
-<tr>
-  <td>Email :</td>
-  <td><input type="text" name="emailid" id="emailid" size="30"></td>
-  </tr>
-  
+            <div class="input-box">
+              <br><span class="details">Password</span>
+              <input type="password" placeholder="Enter your password - abcd1234" id="passw" name="passw">
+            </div>
 
-<tr>
-  <td>Gender :</td>
-  <td><input type="radio" name="gend" value="male" size="10">Male
-  <input type="radio" name="gend" value="Female" size="10">Female</td>
-</tr>
-
-<tr>
-  <td>Date of Birth:</td>
-  <td><input type="date" class="numbers" id="date"  name="formdate" size="10" />
-   </td>
-</tr>
-
-<tr>
-<td>Address :</td>
-<td><input type="text" name="personaladdress"
-id="personaladdress" size="30" placeholder="Enter your address"></td>
-</tr>
-
-<tr>
-<td>Suburbs and towns :</td>
-<td><select name="Suburbs">
-<option value="-1" selected>Select an option</option>
-<option value="AirItam">Air Itam</option>
-<option value="Jelutong">Jelutong</option>
-<option value="Georgetown">Georgetown</option>
-<option value="PulauTikus">Pulau Tikus</option>
-<option value="TanjongTokong">Tanjong Tokong</option>
-<option value="TanjongBungah">Tanjong Bungah</option>
-</select></td>
-</tr>
-
- 
-<tr>
-<td><input type="reset"></td>
-<td ><input type="submit" value="Register" id="userN" onclick="reg()"/></td>
-</tr>
-
-</form>
-</table>
-</section>
+            <div class="input-box">
+              <br><span class="details">Confirm Password</span>
+              <input type="password" placeholder="Confirm your password" id="cpassw" name="cpassw">
+            </div>
+            <div class="button">
+              <input type="submit" value="Register">
+            </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <br><br>
   <footer>
-    <h1>MENU</h1>
-    <a href="#">Traditional Dishes</a> <a href="#">Desserts</a> <a href="#">Noodles</a> <a href="#">Soup</a> <a href="#">Fried Dishes</a> <a href="#">Drinks</a> 
-    <h1>ORDER</h1>
-    <a href="#">Orders</a> <a href="#">Cart</a> <a href="#">Events</a>
-    <h1>CUSTOMER SERVICE</h1>
-     <a href="#">Contact Us</a> <a href="#">FAQs</a>
-    <h1>MY ACCOUNT</h1>
-    <a href="#">Login Account</a> <a href="#">Sign In</a>
-    <h1>NUTRITION</h1>
-    <a href="#">Nutrition Information</a> <a href="#">Food Allergen</a> <a href="#">Gluten Free Pizza</a>
-    <h1>POLICIES</h1>
-    <a href="#">Privacy Policy</a> <a href="#">Terms of Use</a>
-   <br> <address>
-    <h1>ADDRESS</h1>
-    DUN HUANG CHINESE CUISINE <br />
-    888 Chinese Street, <br />
-    NB 56000 Pulau Pinang<br />
-    (04) 6666 8889
-    </address>
+    <table id="footer">
+    
+        <th><h1>MENU</h1><br>
+            <a href="/menudh.html">Traditional Dishes</a><br>
+            <a href="/menudh.html">Soup</a><br>
+            <a href="/menudh.html">Desserts</a></th>
+        <th><h1>ORDER</h1> <a href="/reservation.html">Reservation</a><br>
+        <a href="/shoppingcart.html">Cart</a></th>
+        <th><h1>CONTACT US</h1><br>
+            <a href="/contactus.html">Contact Us</a><br>
+            <a href="/faq.html">FAQs</a></th>
+        <th><h1>MY ACCOUNT</h1><br>
+            <a href="/login.html">Login Account</a><br>
+         <a href="/registration.html">Sign In</a></th>
+        <th><h1>ADDRESS</h1><br><address>
+              <p> DUN HUANG CHINESE CUISINE <br />
+                888 Chinese Steet, <br />
+                NB 56000 Pulau Pinang<br />
+                (04) 6666 8889</p> 
+                </address>
+        </th>
+   </table> 
  </footer>
 </body>
-
-
 </html>
+
+<script language="JavaScript" type="text/JavaScript" src="registration.js"></script>

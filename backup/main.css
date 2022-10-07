@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/* general css */
+html {
+    background-image: url(main5.jpeg);
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    box-shadow: rgb(190, 147, 147) 20px 0px 40px, rgb(51, 51, 51) -20px 0px 40px,
+        inset rgb(51, 21, 21) 0px 0px 40px;
+    border-left: 3px solid rgb(51, 51, 51);
+    border-right: 3px solid rgb(51, 51, 51);
+    min-height: 100%;
+    margin: 0px auto;
+    min-width: 200px;
+    max-width: 950px;
+    width: 100%;
+}
+
+/* nav bar css */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    width: 9.09%;
+}
+
+nav ul li.right {
+    float: right;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 10px;
+    background-color: rgb(235, 228, 219);
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: rgb(141, 184, 181);
+    color: rgb(143, 83, 53);
+}
+
+/* table styles */
+table {
+    background-color: gray;
+    width: 100%;
+}
+
+
+
+/* footer */
+footer {
+    color: white;
+    background: linear-gradient(to bottom, rgb(229, 173, 156), rgb(197, 110, 83));
+    -moz-column-width: 200px;
+    -webkit-column-width: 200px;
+    column-width: 200px;
+    -moz-column-gap: 25px;
+    -webkit-column-gap: 25px;
+    column-gap: 25px;
+    padding: 20px 40px;
+}
+
+footer h1 {
+    color: rgb(255, 241, 147);
+    font-size: 1em;
+    margin: 10px 0px;
+}
+
+footer h1:first-of-type {
+    margin-top: 0px;
+}
+
+footer a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer address {
+    margin-top: 30px;
+    font-style: normal;
+}
+
+input[type=checkbox]:checked {
+    background-color: aqua;
+}
+
+section {
+    margin: 30px 5%;
+}
+
+header nav ul li a:hover {
+    color: rgb(255, 241, 147);
+}

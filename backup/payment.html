@@ -1,0 +1,244 @@
+<html>
+
+<head>
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link src="payment.css" rel="stylesheet">
+    <script src="payment.js"></script>
+</head>
+
+<body onload="startform()">
+    <header>
+        <h1 class="restaurantname"><img class="logo" src="dh.logo1.png" alt="DUN HUANG CHINESE CUISINE" width="80px"
+                height="80px">DUN HUANG CHINESE CUISINE</h1>
+        <img src="dh.upplogo2.jpg" alt="dunhunag" width="100%" height="240px">
+        <nav>
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/menu.html">MENU</a></li>
+                <li><a href="/events.html">EVENTS</a></li>
+                <li><a href="/about-us.html">ABOUT US</a></li>
+                <li><a href="/faq.html">FAQ</a></li>
+                <li><a href="/registration.html">REGISTRATION</a></li>
+                <li><a href="/log-in.html">LOGIN</a></li>
+                <li><a href="/contact-us.html">CONTACT</a></li>
+                <li><a href="/feedback.html">FEEDBACK</a></li>
+                <li><a href="/reservation.html">RESERVATION</a></li>
+                <li><a href="#">CART</a></li>
+            </ul>
+        </nav>
+    </header>
+    <table width="620" cellpadding="0" cellspacing="5">
+        <tr>
+
+        <tr>
+            <!-- START OF Payment Details -->
+            <form name="order" method="get" onsubmit="return checkform()" onreset="location.reload()"
+                action="page1.html">
+                <td>
+                    <h1 style="margin-bottom:0px">Payment Details</h1>
+                </td>
+
+                <!-- FORM DATE -->
+                <td style="text-align:right">
+                    <span class="fmlabel">Date:</span>
+                    <input class="numbers" id="date" name="formdate" size="10" disabled="disabled" />
+                </td>
+        </tr>
+
+        <tr>
+            <!-- DELIVERY FIELDS -->
+            <td valign="top" colspan="2">
+                <fieldset>
+                    <legend>Select delivery options</legend>
+                    <table>
+                        <tr>
+
+                            <!-- LIST OF delivery options -->
+                            <td width="70" valign="top"><span class="fmlabel">Product:</span></td>
+                            <td width="350" valign="top">
+                                <select name="product" onchange="order_price()">
+                                    <option value="0">Pick Up</option>
+                                    <option value="5.00">Delivery</option>
+                                </select>
+                            </td>
+
+                            <!-- PRICE OF SELECTED ITEM X QUANTITY ORDERED -->
+                            <td>
+                                <input id="totalAmount" class="numbers" name="sub1" size="7" value="0.00" disabled />
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <!--delivery -->
+                            <td width="70" valign="top"><span class="fmlabel">Delivery:</span></td>
+                            <td valign="top">
+                                <input type="radio" name="delivery" value="7.95" onclick="del_price(4.50)" />
+                                Standard (5 days): RM 4.50<br>
+                                <input type="radio" name="delivery" value="9.95" onclick="del_price(5.50)" />
+                                Express (2 days): RM 5.50<br>
+                                <input type="radio" name="delivery" value="12.95" onclick="del_price(7.50)" />
+                                Next Day : RM 7.50
+                            </td>
+                            <td valign="top">
+                                <input id="sub3" class="numbers" name="sub3" size="7" value="0.00" disabled>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <!-- TOTAL COST OF ORDER (PRODUCT COST + SHIPPING) -->
+                            <td colspan="2" style="text-align:right">
+                                <span class="fmlabel"><b>TOTAL:</b></span>
+                            </td>
+                            <td>
+                                <input class="numbers" name="total" id="total" size="7" value="0.00" disabled />
+                            </td>
+                        </tr>
+                    </table>
+
+            </td>
+        </tr>
+
+
+        <tr>
+            <!-- SHIPPING ADDRESS FIELDS -->
+            <td valign="top" colspan="2">
+                <br>
+                <fieldset>
+                    <legend>Shipping Address</legend>
+                    <table>
+                        <tr>
+                            <td><span class="fmlabel">Name:</span></td>
+                            <td>
+                                <input name="sname" size="40" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="70" valign="top"><span class="fmlabel">Street:</span></td>
+                            <td>
+                                <textarea rows="3" cols="40" name="sstreet"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="70" valign="top"><span class="fmlabel">City:</span></td>
+                            <td>
+                                <input size="30" name="scity" />
+                                <span class="fmlabel">State:</span>
+                                <select name="sstate">
+                                    <option>Georgetown
+                                    <option>Air Itam
+                                    <option>Jelutong
+                                    <option>Farlim
+                                    <option>Paya Terubong
+                                    <option>
+                                        <span class="fmlabel">ZIP:</span>
+                                        <input size="10" name="szip" />
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </td>
+        </tr>
+
+
+
+
+
+        <tr>
+            <!-- CREDIT CARD FIELDS -->
+            <td valign="top" colspan="2">
+                <br>
+                <fieldset>
+                    <legend>Credit Card Information</legend>
+                    <table width="100%">
+                        <tr>
+
+                            <!-- NAME ON CARD -->
+                            <td width="70" valign="top"><span class="fmlabel">Name:</span></td>
+                            <td colspan="3">
+                                <input size="40" name="cname" />
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <!-- CARD TYPE -->
+                            <td width="70" valign="top"><span class="fmlabel">Card:</span></td>
+                            <td valign="top">
+                                <input type="radio" name="ccard" value="ae" />American Express<br>
+                                <input type="radio" name="ccard" value="cc" />CitiBank
+                            </td>
+                            <td valign="top">
+                                <input type="radio" name="ccard" value="dn" />Diner's Club<br>
+                                <input type="radio" name="ccard" value="di" />Discover
+                            </td>
+                            <td valign="top">
+                                <input type="radio" name="ccard" value="mc" />MasterCard<br>
+                                <input type="radio" name="ccard" value="vi" />Visa
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <!-- CARD NUMBER -->
+                            <td width="70" valign="top"><span class="fmlabel">Number:</span></td>
+
+                            <!-- cARD EXPIRATION DATE -->
+                            <td colspan="3">
+                                <input type="text" size="20" name="cnumber" />
+                                <span class="fmlabel">Expiration:</span>
+                                <input type="month" />
+                            </td>
+
+                            <!-- cvv -->
+                            <td width="70" valign="top"><span class="fmlabel">CVV:</span></td>
+
+                        </tr>
+                    </table>
+                </fieldset>
+            </td>
+        </tr>
+
+        <tr>
+
+            <!-- BUTTONS TO SUBMIT OR CANCEL THE ORDER -->
+            <td style="text-align:center" colspan="2">
+                <input type="submit" value="Submit Order" />
+                &nbsp;&nbsp;
+                <input type="reset" value="Cancel Order" onclick="confirm('Cancel Order  ?')" />
+            </td>
+        </tr>
+
+        </form>
+
+    </table>
+
+    <footer>
+        <h1>MENU</h1>
+        <a href="#">Traditional Dishes</a> <a href="#">Desserts</a> <a href="#">Noodles</a> <a href="#">Soup</a> <a
+            href="#">Fried Dishes</a> <a href="#">Drinks</a>
+        <h1>ORDER</h1>
+        <a href="#">Orders</a> <a href="#">Cart</a> <a href="#">Events</a>
+        <h1>CUSTOMER SERVICE</h1>
+        <a href="#">Contact Us</a> <a href="#">FAQs</a>
+        <h1>MY ACCOUNT</h1>
+        <a href="#">Login Account</a> <a href="#">Sign In</a>
+        <h1>NUTRITION</h1>
+        <a href="#">Nutrition Information</a> <a href="#">Food Allergen</a> <a href="#">Gluten Free Pizza</a>
+        <h1>POLICIES</h1>
+        <a href="#">Privacy Policy</a> <a href="#">Terms of Use</a>
+        <br>
+        <address>
+            <h1>ADDRESS</h1>
+            DUN HUANG CHINESE CUISINE <br />
+            888 Chinese Street, <br />
+            NB 56000 Pulau Pinang<br />
+            (04) 6666 8889
+        </address>
+    </footer>
+</body>
+
+
+</html>

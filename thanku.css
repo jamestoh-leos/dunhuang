@@ -1,0 +1,14 @@
+html{
+    background-image: url(thankuu.jpg);
+    height: auto;
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    float: right;
+    margin-top: 380px;
+    margin-right: 300px;
+    font-size: 60px;
+    color: rgb(8, 63, 60);
+}
