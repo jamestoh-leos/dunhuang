@@ -2,103 +2,124 @@
 <html lan="en">
 <!-- Author: TAN SHI YU
     Date:   17 SEPTEMBER 2022-->
-   
-    <head>
-        <title>LOGIN</title>
-        <meta charset="utf-8"/> 
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-       
-        <link rel="stylesheet" href="login.style.css">
-    </head>
-    <body>  <header><h1 class="restaurantname"><img class="logo" src="dh.logo1.png" alt="DUN HUANG CHINESE CUISINE" width="80px" height="80px">DUN HUANG CHINESE CUISINE</h1>
-       
-        <a href="/index.html"></a>
-            <nav>
-                <ul>
-                    <li><a href="/index.html">HOME</a></li>
-                    <li><a href="/menudh.html">MENU</a></li>
-                    <li><a href="/event.html">EVENTS</a></li>
-                    <li><a href="/About_us.html">ABOUT US</a></li>
-                    <li><a href="/faq.html">FAQ</a></li>
-                    <li><a href="/registration.html">REGISTRATION</a></li>
-                    <li><a href="/login.html">LOGIN</a></li>
-                    <li><a href="/contactus.html">CONTACT</a></li>
-                    <li><a href="/feedback.html">FEEDBACK</a></li>
-                    <li><a href="/reservation.html">RESERVATION</a></li>
-                    <li><a href="/shoppingcart.html">CART</a></li>
-                </ul>
-            </nav>
-        </header>
-       <section> <article>
-            <h1>Login</h1>
-            <p>If you have not registered an account, please register on the registration page. <br> <br>This is the registration page >> <button><a
-                    href="registration.html">Registration page</a></button></p>
-            
-                    <p>Kindly login your account.</p>
-                    <div class="container">
-                   <form action="shoppingcart.html" method="post" name="loginF" id="loginF" 
-                   required> <br><br><br>
 
-                   <fieldset id="loginform">
-                   
-             
-                    
-                       <br> <div class="col-75">
-                            <label for="loginid" > User Id :</label><br>
-                            <input type="email" name="userN" id="userN" placeholder="name@email.com" required  >
+<head>
+    <title>LOGIN</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="login.style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="restaurantname"><img class="logo" src="dh.logo1.png" alt="DUN HUANG CHINESE CUISINE" width="80px"
+                height="80px">DUN HUANG CHINESE CUISINE</h1>
+
+        <a href="index.html"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menudh.html">MENU</a></li>
+                <li><a href="event.html">EVENTS</a></li>
+                <li><a href="About_us.html">ABOUT US</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="registration.html">REGISTRATION</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="contactus.html">CONTACT</a></li>
+                <li><a href="feedback.html">FEEDBACK</a></li>
+                <li><a href="reservation.html">RESERVATION</a></li>
+                <li><a href="shoppingcart.html">CART</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article>
+            <h1>Login</h1>
+            <p>If you have not registered an account, please register on the registration page. <br> <br>This is the
+                registration page >> <button><a href="registration.html">Registration page</a></button></p>
+
+            <p>Kindly login your account.</p>
+            <div class="container">
+                <form action="shoppingcart.html" method="post" name="loginF" id="loginF" required> <br><br><br>
+
+                    <fieldset id="loginform">
+
+
+
+                        <br>
+                        <div class="col-75">
+                            <label for="loginid"> User Id :</label><br>
+                            <input type="email" name="userN" id="userN" placeholder="name@email.com" required>
                         </div>
                         <div class="col-75">
-                            <label for="idPassword" >Password :</label><br>
-                            <input type="password" id="pW" name="pW" required 
-                            placeholder="abcd1234" pattern="/([A-Z]{4}|[a-z]{4})[0-9]{4}/"/>
-                           
-                   
-                   <br><br> <br><br><br><div class="row">
-                        <input type="checkbox" id="botCheck" name="botCheck" style="width: 30px; height: 30px;"/>
-                        <label for="botCheck">Check the checkbox to verify
-                            that you
-                            are
-                            not a robot.</label>
-                   <br><br> </div><br><br>
-                    <input type="submit" value="Login" hover onclick="checkForm();"  />
-                    <input type="reset" value="Clear"hover onclick="window.location.reload();" />
-               </fieldset> </form><br><br><audio controls autoplay><source src="bgm.ogg" type="audio/ogg">
-                <source src="bgm.mp3" type="audio/mpeg"></audio>
+                            <label for="idPassword">Password :</label><br>
+                            <input type="password" id="pW" name="pW" required placeholder="abcd1234"
+                                pattern="/([A-Z]{4}|[a-z]{4})[0-9]{4}/" />
+
+
+                            <br><br> <br><br><br>
+                            <div class="row">
+                                <input type="checkbox" id="botCheck" name="botCheck"
+                                    style="width: 30px; height: 30px;" />
+                                <label for="botCheck">Check the checkbox to verify
+                                    that you
+                                    are
+                                    not a robot.</label>
+                                <br><br>
+                            </div><br><br>
+                            <input type="submit" value="Login" hover onclick="checkForm();" />
+                            <input type="reset" value="Clear" hover onclick="window.location.reload();" />
+                    </fieldset>
+                </form><br><br><audio controls autoplay>
+                    <source src="bgm.ogg" type="audio/ogg">
+                    <source src="bgm.mp3" type="audio/mpeg">
+                </audio>
             </div>
-              <br><br>
+            <br><br>
             <div id="message">
-          <h3>Password must contain the following: <span>&#128071;&#127995;</span> </h3>
-        <p >A <b>lowercase or uppercase </b> letter !</p>
-         <p >A <b>number</b> and a special character</p>
-         <p >Minimum <b>8 characters</b> and maximum 12 characters</p>
-        </div>
+                <h3>Password must contain the following: <span>&#128071;&#127995;</span> </h3>
+                <p>A <b>lowercase or uppercase </b> letter !</p>
+                <p>A <b>number</b> and a special character</p>
+                <p>Minimum <b>8 characters</b> and maximum 12 characters</p>
+            </div>
         </article>
     </section><br><br><br><br>
     <footer>
         <table id="footer">
-        
-            <th><h1>MENU</h1><br>
-                <a href="/menudh.html">Traditional Dishes</a><br>
-                <a href="/menudh.html">Soup</a><br>
-                <a href="/menudh.html">Desserts</a></th>
-            <th><h1>ORDER</h1> <a href="/reservation.html">Reservation</a><br>
-            <a href="/shoppingcart.html">Cart</a></th>
-            <th><h1>CONTACT US</h1><br>
-                <a href="/contactus.html">Contact Us</a><br>
-                <a href="/faq.html">FAQs</a></th>
-            <th><h1>MY ACCOUNT</h1><br>
-                <a href="/login.html">Login Account</a><br>
-             <a href="/registration.html">Sign In</a></th>
-            <th><h1>ADDRESS</h1><br><address>
-                  <p> DUN HUANG CHINESE CUISINE <br />
-                    888 Chinese Steet, <br />
-                    NB 56000 Pulau Pinang<br />
-                    (04) 6666 8889</p> 
-                    </address>
+
+            <th>
+                <h1>MENU</h1><br>
+                <a href="menudh.html">Traditional Dishes</a><br>
+                <a href="menudh.html">Soup</a><br>
+                <a href="menudh.html">Desserts</a>
             </th>
-       </table> 
-     </footer>
-    </body>
-            
+            <th>
+                <h1>ORDER</h1> <a href="reservation.html">Reservation</a><br>
+                <a href="shoppingcart.html">Cart</a>
+            </th>
+            <th>
+                <h1>CONTACT US</h1><br>
+                <a href="contactus.html">Contact Us</a><br>
+                <a href="faq.html">FAQs</a>
+            </th>
+            <th>
+                <h1>MY ACCOUNT</h1><br>
+                <a href="login.html">Login Account</a><br>
+                <a href="registration.html">Sign In</a>
+            </th>
+            <th>
+                <h1>ADDRESS</h1><br>
+                <address>
+                    <p> DUN HUANG CHINESE CUISINE <br />
+                        888 Chinese Steet, <br />
+                        NB 56000 Pulau Pinang<br />
+                        (04) 6666 8889</p>
+                </address>
+            </th>
+        </table>
+    </footer>
+</body>
+
 </html>
-  <script language="JavaScript" type="text/JavaScript" src="login.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="login.js"></script>
